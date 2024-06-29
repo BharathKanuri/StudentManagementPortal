@@ -1,0 +1,25 @@
+<web-app>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>com.StudentServlet</servlet-name>
+        <servlet-class>com.StudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>com.StudentServlet</servlet-name>
+        <url-pattern>/StudentServlet</url-pattern>
+    </servlet-mapping>
+    <context-param>
+        <param-name>jdbcURL</param-name>
+        <param-value>jdbc:mysql://localhost:3306/test</param-value>
+    </context-param>        
+    <context-param>
+        <param-name>jdbcUsername</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>jdbcPassword</param-name>
+        <param-value>KBchandra@2004</param-value>
+    </context-param>
+</web-app>
